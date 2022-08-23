@@ -1,0 +1,80 @@
+.button {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 18px 40px;
+    text-transform: uppercase;
+
+    i {
+        margin-left: 10px;
+    }
+
+    @media (max-width: 767px) {
+        padding: 18px 25px;
+        font-size: 14px;
+    }
+}
+
+.theme-button-primary {
+    @include orange-gradient-bg;
+    color: $color-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $color-light;
+        background-color: #d85316;
+        transition: all 0.3s ease-in;
+    }
+}
+
+.theme-button-secondary {
+    background-color: $theme-color-white;
+    color: $theme-color-orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $color-gray;
+        transition: all 0.3s ease-in;
+    }
+}
+
+.theme-button-minimal {
+    padding: 0;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        border-bottom: 1px solid $theme-color-orange;
+    }
+}
+
+// VIDEO ICON BUTTON
+.video-icon-button {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: $theme-color-orange;
+
+    &:hover {
+        color: $theme-color-dark;
+    }
+
+    @media (max-width: 575px) {
+        width: 80px;
+        height: 80px;
+    }
+    i {
+        font-size: 22px;
+        @media (max-width: 575px) {
+            font-size: 18px;
+        }
+    }
+}

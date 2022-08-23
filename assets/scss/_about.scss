@@ -1,0 +1,471 @@
+// =================== ABOUT US: ONE =================== //
+
+.about-us-wrapper {
+    .about-us-img-wrapper {
+        .about-us-img {
+            position: relative;
+            max-width: 470px;
+            width: 100%;
+            height: 500px;
+            background-color: #ff678e;
+
+            @media (max-width: 575px) {
+                margin: 0 auto;
+                height: 350px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 75%;
+                top: 70px;
+                left: -70px;
+                background-color: #ff678d44;
+                z-index: -1;
+
+                @media (max-width: 1150px) {
+                    left: -40px;
+                    top: 40px;
+                }
+
+                @media (max-width: 575px) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .section-heading-wrapper {
+        text-align: left;
+    }
+
+    .section-small-heading {
+        &::after {
+            background-color: transparent;
+        }
+    }
+
+    .about-us-content {
+        @media (max-width: 991px) {
+            margin-top: 100px;
+        }
+
+        @media (max-width: 575px) {
+            margin-top: 60px;
+        }
+        .section-small-heading {
+            margin-left: 80px;
+            @media (max-width: 400px) {
+                margin-left: 60px;
+            }
+        }
+
+        .about-us-text {
+            @media (max-width: 991px) {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .about-us-stats {
+        margin: 40px 0px;
+        .stats-box {
+            margin-right: 60px;
+        }
+
+        i {
+            color: $theme-color-orange;
+            font-size: 45px;
+            line-height: 28px;
+            margin-right: 15px;
+            font-weight: 500;
+        }
+
+        .stats-number {
+            position: relative;
+            font-size: 45px;
+            letter-spacing: -1px;
+            line-height: 55px;
+            color: $theme-color-dark;
+            font-weight: 600;
+
+            @media (max-width: 767px) {
+                font-size: 30px;
+            }
+
+            span {
+                font-size: 30px;
+                line-height: 55px;
+                color: $theme-color-dark;
+                font-weight: 700;
+                position: absolute;
+                top: -25px;
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+        }
+        .stats-text {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+
+    .about-us-profile {
+        .profile-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 35px;
+            margin-right: 15px;
+        }
+
+        .role {
+            font-size: 14px;
+            color: $theme-color-orange;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 5px;
+        }
+    }
+}
+
+// =================== ABOUT US: TWO =================== //
+.about-us-two-wrapper {
+    .section-heading-wrapper {
+        .section-small-heading {
+            margin-left: 80px;
+            @media (max-width: 400px) {
+                margin-left: 60px;
+            }
+            &::after {
+                background: transparent;
+            }
+        }
+    }
+
+    .about-right-text {
+        h5 {
+            font-size: 18px;
+            line-height: 28px;
+            color: $theme-color-dark;
+            font-weight: 600;
+            font-family: "Poppins", serif;
+        }
+    }
+
+    .about-us-card {
+        @media (max-width: 991px) {
+            margin-bottom: 30px;
+        }
+
+        .card-thumb {
+            max-width: 370px;
+            width: 100%;
+            height: 250px;
+            background-color: #b5b5b5;
+
+            @media (max-width: 767px) {
+                max-width: 100%;
+            }
+        }
+
+        .card-heading {
+            margin-top: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+
+            i {
+                font-size: 24px;
+                color: $theme-color-orange;
+                margin-right: 20px;
+            }
+
+            &:hover {
+                border-bottom: 2px solid $theme-color-orange;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        .button {
+            border-bottom: 2px solid $theme-color-dark;
+
+            &:hover {
+                color: $theme-color-orange;
+                border-color: $theme-color-orange;
+            }
+        }
+    }
+}
+
+// ABOUT: VIDEO
+.video-wrapper {
+    padding: 260px 0px;
+    background: #999;
+
+    @media (max-width: 991px) {
+        padding: 150px 0px;
+    }
+
+    @media (max-width: 575px) {
+        padding: 80px 0px;
+    }
+}
+
+// =================== ABOUT US: THREE =================== //
+.about-us-two-wrapper {
+    .about-us-img-wrapper {
+        position: relative;
+        .about-us-img {
+            max-width: 400px;
+            width: 100%;
+            height: 370px;
+
+            @media (max-width: 575px) {
+                margin: 0 auto;
+                height: 300px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 75%;
+                top: 300px;
+                left: 70px;
+                background-color: #ff678d44;
+                z-index: -1;
+                display: none;
+
+                @media (max-width: 1150px) {
+                    left: -40px;
+                    top: 40px;
+                }
+
+                @media (max-width: 575px) {
+                    display: none;
+                }
+            }
+        }
+
+        .about-us-img-small {
+            max-width: 400px;
+            width: 100%;
+            height: 270px;
+            position: absolute;
+            bottom: -200px;
+            right: 100px;
+            z-index: -1;
+
+            @media (max-width: 991px) {
+                bottom: -50px;
+            }
+
+            @media (max-width: 767px) {
+                right: -50px;
+                bottom: -50px;
+            }
+
+            @media (max-width: 575px) {
+                display: none;
+            }
+        }
+    }
+}
+
+// =================== ABOUT US: FOUR =================== //
+.about-us-four-wrapper {
+    .left-content {
+        position: relative;
+        .left-img {
+            width: 100%;
+            max-width: 530px;
+            min-height: 540px;
+
+            @media (max-width: 767px) {
+                max-width: 320px;
+                min-height: 350px;
+            }
+        }
+
+        .left-small-card {
+            background-image: linear-gradient(141deg, #eb110a 0%, #ff5d13 99%);
+            padding: 40px;
+            border-radius: 8px;
+            width: 55%;
+            position: absolute;
+            right: 0;
+            bottom: -30px;
+
+            @media (max-width: 767px) {
+                width: 60%;
+            }
+            @media (max-width: 450px) {
+                width: 80%;
+            }
+            h2 {
+                font-size: 60px;
+                letter-spacing: -2px;
+                line-height: 28px;
+                color: #ffffff;
+                position: relative;
+            }
+
+            .plus {
+                font-size: 40px;
+                letter-spacing: -1px;
+                line-height: 28px;
+                color: #ffffff;
+                font-weight: 400;
+                font-family: "Poppins", sans-serif;
+                position: absolute;
+                margin-top: -30px;
+            }
+
+            .text {
+                font-size: 24px;
+                letter-spacing: -1px;
+                line-height: 28px;
+                color: #ffffff;
+                font-weight: 400;
+                margin-left: 30px;
+                font-family: "Roboto", sans-serif;
+            }
+        }
+    }
+
+    .right-content {
+        margin-left: 60px;
+        @media (max-width: 1200px) {
+            margin-left: 30px;
+        }
+        @media (max-width: 991px) {
+            margin-left: 0px;
+            margin-top: 70px;
+        }
+        .section-small-heading {
+            margin-left: 80px;
+            @media (max-width: 400px) {
+                margin-left: 60px;
+            }
+            &::after {
+                display: none;
+            }
+        }
+
+        .card-wrapper {
+            .card-icon {
+                width: 50px;
+                height: 50px;
+                // margin-right: 25px;
+                @media (max-width: 767px) {
+                    margin-bottom: 20px;
+                    margin-right: 20px;
+                }
+            }
+
+            .card-content {
+                padding: 0px 20px;
+                @media (max-width: 767px) {
+                    padding: 0;
+                }
+                h4 {
+                    font-size: 20px;
+                    letter-spacing: -1px;
+                    line-height: 28px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+// =================== ABOUT US: FIVE =================== //
+.about-us-five-wrapper {
+    .theme-heading-secondary {
+        color: $theme-color-light;
+    }
+    .section-small-heading {
+        color: $theme-color-light;
+        margin-left: 80px;
+        @media (max-width: 400px) {
+            margin-left: 60px;
+        }
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            background-color: $theme-color-light;
+        }
+    }
+    .left-content {
+        background-color: #b5b5b5;
+        width: 100%;
+        min-height: 100%;
+
+        @media (max-width: 767px) {
+            min-height: 40vh;
+        }
+    }
+
+    .right-content {
+        width: 100%;
+        min-height: 100%;
+        padding: 130px 250px;
+
+        @media (max-width: 1800px) {
+            padding: 130px 100px;
+        }
+
+        @media (max-width: 1320px) {
+            padding: 130px 40px;
+        }
+
+        @media (max-width: 575px) {
+            padding: 70px 10px;
+        }
+
+        .card-wrapper {
+            .card-icon {
+                font-size: 24px;
+                min-width: 60px;
+                height: 60px;
+                background-color: #fff;
+                color: $theme-color-orange;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+                @media (max-width: 767px) {
+                    margin-bottom: 20px;
+                    // margin-left: 20px;
+                }
+            }
+
+            .card-content {
+                padding: 0px 20px;
+                @media (max-width: 767px) {
+                    padding: 0;
+                }
+                h4 {
+                    color: $theme-color-light;
+                    font-size: 20px;
+                    letter-spacing: -1px;
+                    line-height: 28px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    color: $theme-color-light;
+                }
+            }
+        }
+
+        .button {
+            background: transparent !important;
+            border: 3px solid #fff;
+            margin-top: 30px;
+        }
+    }
+}

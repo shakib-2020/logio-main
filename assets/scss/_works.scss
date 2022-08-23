@@ -1,0 +1,21 @@
+.work-process-wrapper {
+    .section-heading-num {
+        right: -10px;
+    }
+
+    .work-process-content {
+        padding-top: 40px;
+        .work-process-card {
+            text-align: center;
+            padding: 40px;
+            .card-img {
+                width: 50%;
+                margin-bottom: 40px;
+            }
+
+            .card-heading {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

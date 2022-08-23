@@ -1,0 +1,149 @@
+//font-family: "Font Awesome 5 Pro";
+$fa: "Font Awesome 5 Pro";
+
+.theme-heading-primary {
+    font-size: 80px;
+    color: $color-secondary;
+    font-weight: bold;
+
+    @media (max-width: 991px) {
+        font-size: 60px;
+    }
+
+    @media (max-width: 575px) {
+        font-size: 40px;
+    }
+}
+
+.theme-heading-secondary {
+    font-size: 50px;
+    color: $theme-color-dark;
+
+    @media (max-width: 991px) {
+        font-size: 40px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 35px;
+    }
+
+    @media (max-width: 575px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 26px;
+    }
+}
+
+.theme-heading-tertiary {
+    font-size: 24px;
+    color: $theme-color-dark;
+    line-height: 32px;
+
+    @media (max-width: 575px) {
+        font-size: 20px;
+    }
+}
+
+.section-heading-wrapper {
+    text-align: center;
+    .section-small-heading {
+        position: relative;
+        font-size: 20px;
+        color: $theme-color-orange;
+        margin-bottom: 20px;
+        font-weight: bold;
+        display: inline-block;
+
+        @media (max-width: 400px) {
+            font-size: 18px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 50px;
+            height: 3px;
+            top: 15px;
+            left: -80px;
+            background-color: $theme-color-orange;
+
+            @media (max-width: 400px) {
+                width: 40px;
+                left: -60px;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 50px;
+            height: 3px;
+            top: 15px;
+            right: -80px;
+            background-color: $theme-color-orange;
+
+            @media (max-width: 400px) {
+                width: 40px;
+                right: -60px;
+            }
+        }
+    }
+
+    .section-heading {
+        position: relative;
+        margin-bottom: 25px;
+
+        .section-heading-num {
+            font-size: 220px;
+            letter-spacing: -7px;
+            line-height: 55px;
+            color: #282828;
+            opacity: 0.1;
+            font-weight: 700;
+            position: absolute;
+            top: 10px;
+            left: -5px;
+            z-index: -1;
+
+            @media (max-width: 767px) {
+                font-size: 150px;
+            }
+        }
+    }
+}
+
+.body-normal-text {
+    font-size: 14px;
+    font-weight: normal;
+    color: #9b9b9b;
+    line-height: 28px;
+}
+
+// SIDEBAR HEADING
+.sidebar-heading {
+    font-size: 30px;
+    letter-spacing: -1px;
+    line-height: 85px;
+    color: $theme-color-dark;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ededed;
+    position: relative;
+
+    @media (max-width: 400px) {
+        font-size: 28px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 80px;
+        height: 4px;
+        border-radius: 5px;
+        @include orange-gradient-bg;
+        bottom: -3px;
+        left: 0;
+    }
+}

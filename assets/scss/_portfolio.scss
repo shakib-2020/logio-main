@@ -1,0 +1,176 @@
+// ======================== PROJECT: ONE ======================== //
+.projects-wrapper {
+    .section-heading-num {
+        right: -10px;
+    }
+
+    .project-filter-wrapper {
+        text-align: center;
+
+        .projcet-filter-buttons {
+            margin: 45px 0 40px 0;
+
+            li {
+                display: inline-block;
+                font-size: 18px;
+
+                line-height: 40px;
+                color: #9b9b9b;
+                font-weight: 600;
+                font-family: "Poppins", serif;
+                cursor: pointer;
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+            }
+
+            li.active {
+                color: $theme-color-orange;
+            }
+        }
+    }
+
+    .filter-item-wrapper {
+        .filter-item {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background-color: #767676;
+            margin-bottom: 20px;
+
+            .filter-item-overlay {
+                position: absolute;
+                background-image: linear-gradient(
+                    141deg,
+                    rgba(235, 17, 10, 0.8509803921568627) 0%,
+                    rgba(255, 93, 19, 0.9294117647058823) 99%
+                );
+                width: 100%;
+                height: 100%;
+                top: 0;
+                right: 0;
+                display: none;
+                transition: 0.3s ease-in-out;
+
+                .overlay-content {
+                    margin-top: 145px;
+                    color: $theme-color-white;
+                    i {
+                        font-size: 60px;
+                        margin-bottom: 20px;
+                    }
+
+                    h3 {
+                        color: $theme-color-white;
+                    }
+                }
+            }
+
+            &:hover .filter-item-overlay {
+                display: block;
+                transition: all 1s ease;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// CASE STUDIES TWO
+.case-studies-two-projects {
+    .project-filter-wrapper {
+        .projcet-filter-buttons {
+            margin-top: 100px;
+        }
+    }
+}
+
+// ======================== PROJECT: TWO ======================== //
+.project-two-wrapper {
+    .section-heading-num {
+        right: -10px;
+    }
+
+    .project-card-wrapper {
+        padding: 0 100px;
+
+        @media (max-width: 1400px) {
+            padding: 0 30px;
+        }
+    }
+
+    .project-card {
+        .card-thumb {
+            width: 100%;
+            height: 450px;
+
+            @media (max-width: 767px) {
+                height: 400px;
+            }
+
+            @media (max-width: 575px) {
+                height: 350px;
+            }
+        }
+
+        .card-content {
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(220, 220, 220, 0.78);
+            background-color: #ffffff;
+            margin-top: -100px;
+            width: 85%;
+            margin: auto;
+            margin-top: -50px;
+            z-index: 111;
+            position: relative;
+
+            @media (max-width: 575px) {
+                padding: 20px;
+            }
+        }
+
+        .content-top {
+            .card-top-item {
+                display: inline-block;
+                margin-right: 20px;
+                font-size: 14px;
+                line-height: 55px;
+                color: #9b9b9b;
+                font-weight: 500;
+                text-transform: uppercase;
+                margin-top: -15px;
+
+                &:nth-child(1) {
+                    color: $theme-color-orange;
+                }
+            }
+        }
+        .heart-count {
+            color: #9b9b9b;
+
+            i {
+                font-weight: 400;
+                color: $theme-color-orange;
+            }
+        }
+
+        .content-bottom {
+            .plus-icon {
+                width: 35px;
+                height: 35px;
+                background-color: $theme-color-orange;
+                border-radius: 50%;
+                color: $theme-color-white;
+            }
+        }
+
+        .button {
+            color: #9b9b9b;
+            border-bottom: 2px solid #9b9b9b;
+
+            &:hover {
+                color: $theme-color-orange;
+                border-color: $theme-color-orange;
+            }
+        }
+    }
+}

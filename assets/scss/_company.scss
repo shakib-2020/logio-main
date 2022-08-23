@@ -1,0 +1,1008 @@
+// =================== STATISTICS =================== //
+.statistics-wrapper {
+    .theme-heading-secondary,
+    .body-normal-text {
+        color: $theme-color-white;
+    }
+
+    .section-heading-wrapper {
+        .section-small-heading {
+            &::before {
+                @media (max-width: 400px) {
+                    left: -50px;
+                }
+            }
+
+            &::after {
+                @media (max-width: 400px) {
+                    right: -50px;
+                }
+            }
+        }
+    }
+
+    .statistics-card {
+        width: 100%;
+        max-width: 170px;
+        margin: 50px auto 0px auto;
+
+        .card-counter {
+            position: relative;
+            .card-counter-num {
+                font-size: 45px;
+                letter-spacing: -1px;
+                line-height: 55px;
+                color: $theme-color-white;
+                font-weight: 600;
+                margin-top: 20px;
+
+                @media (max-width: 575px) {
+                    font-size: 35px;
+                }
+            }
+
+            span {
+                color: $theme-color-orange;
+                font-size: 30px;
+                position: absolute;
+                top: -20px;
+                right: 20px;
+
+                @media (max-width: 575px) {
+                    top: -10px;
+                    right: 50px;
+                }
+            }
+        }
+
+        .card-text {
+            font-size: 14px;
+            font-weight: 600;
+            color: $theme-color-white;
+            text-transform: capitalize;
+        }
+
+        .statistics-bars {
+            margin-top: 35px;
+        }
+    }
+}
+
+// =================== STATISTICS: TWO =================== //
+.statistics-two-wrapper {
+    .theme-heading-secondary {
+        color: $theme-color-dark;
+    }
+
+    .section-heading-num {
+        right: -10px;
+    }
+
+    .card-counter {
+        .card-counter-num {
+            color: $theme-color-dark !important;
+        }
+    }
+
+    .skills-bar-wrapper {
+        .progressbar-wrapper {
+            .progress {
+                background: $theme-color-white;
+            }
+
+            .progress-bar {
+                background: $theme-color-orange;
+            }
+        }
+    }
+}
+
+// =================== STATISTICS: THREE =================== //
+.statistics-three-wrapper {
+    padding-top: 300px;
+
+    position: relative;
+    z-index: -1;
+}
+
+// Tranport Method
+.transport-wrapper {
+    padding: 50px 0px;
+    background-color: #f9f9f9;
+
+    .transport-method-item {
+        width: 80px;
+        margin: auto;
+
+        @media (max-width: 400px) {
+            width: 60px;
+        }
+    }
+
+    .transport-method-img {
+        width: 100%;
+    }
+}
+
+// Carousel styles
+.owl-dots {
+    margin-top: 75px;
+}
+
+// Owl nav styles
+.owl-nav {
+    display: flex;
+    @media (max-width: 1250px) {
+        display: none;
+    }
+}
+
+.owl-prev {
+    position: absolute;
+    top: 15%;
+    left: -150px;
+
+    @media (max-width: 1500px) {
+        left: -70px;
+    }
+}
+
+.owl-next {
+    position: absolute;
+    top: 15%;
+    right: -150px;
+    @media (max-width: 1500px) {
+        right: -70px;
+    }
+}
+
+// =================== SUPPORT =================== //
+.support-wrapper {
+    background-color: #7e4151;
+
+    .support-content {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+
+        @media (max-width: 991px) {
+            width: 80%;
+        }
+
+        @media (max-width: 400px) {
+            width: 90%;
+        }
+        .support-top-heading {
+            display: inline-block;
+            font-size: 24px;
+            line-height: 28px;
+            color: $theme-color-white;
+            border-bottom: 2px solid #fff;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: $theme-color-white;
+            margin-bottom: 30px;
+        }
+
+        .body-normal-text {
+            font-size: 18px;
+            line-height: 30px;
+            color: $theme-color-white;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+        }
+    }
+}
+
+// =================== SUCCESS STORY =================== //
+
+.success-story-wrapper {
+    .section-heading-num {
+        right: -10px;
+    }
+
+    .success-carousel-item {
+        .carousel-card {
+            text-align: center;
+        }
+        .carousel-card-top {
+            padding: 30px;
+            box-shadow: (0px 10px 30px rgba(232, 232, 232, 0.81));
+            background-color: #ffffff;
+            text-align: center;
+            position: relative;
+            transition: 0.3s ease;
+
+            &:hover {
+                @include orange-gradient-bg;
+                color: $theme-color-white;
+
+                p {
+                    color: $theme-color-white;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 28px;
+                color: #9b9b9b;
+                font-weight: 400;
+            }
+
+            .triangle-down {
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-top: 20px solid $theme-color-orange;
+                position: absolute;
+                bottom: -20px;
+                left: 46%;
+            }
+        }
+
+        .carousel-card-bottom {
+            max-width: 150px;
+            width: 100%;
+            margin-top: 100px;
+            background-color: $theme-color-orange;
+            padding: 20px;
+            position: relative;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 100px;
+
+            .date {
+                font-size: 16px;
+                letter-spacing: 0px;
+
+                color: #ffffff;
+                font-weight: 700;
+                font-family: "Poppins", serif;
+                text-align: center;
+            }
+
+            .triangle-up {
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-bottom: 20px solid $theme-color-orange;
+                position: absolute;
+                top: -20px;
+                left: 40%;
+            }
+        }
+    }
+}
+
+// =================== EXPLORE AGENCY =================== //
+.our-agency-wrapper {
+    .section-heading-wrapper {
+        .section-small-heading {
+            margin-left: 80px;
+            @media (max-width: 400px) {
+                margin-left: 60px;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .agency-content-text {
+        .button {
+            display: inline-block;
+            margin-top: 35px;
+        }
+    }
+
+    .agency-content-photo {
+        width: 100%;
+        position: relative;
+        .agency-photo-1 {
+            max-width: 370px;
+            width: 100%;
+            height: 491px;
+            background-color: #282828;
+            position: relative;
+
+            @media (max-width: 400px) {
+                width: 70%;
+                height: 300px;
+            }
+
+            &::before {
+                width: 80%;
+                height: 80%;
+                content: "";
+                background-image: url("../img/services/services-explore-2.jpg");
+                position: absolute;
+                top: 10%;
+                left: 80%;
+
+                @media (max-width: 1150px) {
+                    left: 60%;
+                }
+
+                @media (max-width: 767px) {
+                    left: 50%;
+                }
+
+                @media (max-width: 400px) {
+                    left: 50%;
+                }
+            }
+        }
+
+        .circle-icon {
+            position: absolute;
+            top: -50px;
+            right: -105px;
+            z-index: -1;
+            max-width: 230px;
+            width: 100%;
+
+            @media (max-width: 1300px) {
+                width: 150px;
+                top: -75px;
+                right: 115px;
+            }
+
+            @media (max-width: 991px) {
+                top: -25px;
+                right: 107px;
+            }
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+    }
+}
+
+// =================== OUR HISTORY =================== //
+.our-history-wrapper {
+    .history-profile-card {
+        border: 10px solid $theme-color-orange;
+        padding: 30px;
+        max-width: 370px;
+
+        @media (max-width: 991px) {
+            margin-bottom: 60px;
+        }
+        .card-num {
+            font-size: 200px;
+            letter-spacing: -12px;
+            color: $theme-color-dark;
+        }
+
+        .card-text {
+            font-size: 18px;
+            line-height: 28px;
+            color: #9b9b9b;
+            font-weight: 500;
+            margin-top: -20px;
+        }
+
+        .card-profile {
+            .profile-img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+            .role {
+                font-size: 14px;
+                color: $theme-color-orange;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .section-heading-wrapper {
+        .section-small-heading {
+            margin-left: 80px;
+            @media (max-width: 400px) {
+                margin-left: 60px;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .stats-wrapper {
+        .stats-details {
+            margin-left: -50px;
+            margin-top: 10px;
+        }
+    }
+
+    .button {
+        display: inline-block;
+        margin-top: 30px;
+
+        @media (max-width: 575px) {
+            margin-top: 0;
+        }
+    }
+}
+
+// CASE STUDIES PROJECT
+.case-studies-project-wrapper {
+    background-color: #f9f9f9;
+
+    .project-card-wrapper {
+        .project-card {
+            margin-bottom: 60px;
+
+            @media (max-width: 991px) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .theme-pagination-wrapper {
+        margin-top: 20px;
+    }
+}
+
+// =================== CASE DETAILS =================== //
+.case-details-banner-wrapper {
+    padding-top: 120px;
+    .case-details-banner {
+        background-color: #959595;
+        width: 100%;
+        min-height: 620px;
+
+        @media (max-width: 767px) {
+            min-height: 500px;
+        }
+
+        @media (max-width: 575px) {
+            min-height: 350px;
+        }
+    }
+
+    .case-details-content {
+        .case-heading {
+            font-size: 30px;
+            color: $theme-color-dark;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+        }
+
+        .case-strategy {
+            .strategy-point {
+                margin-top: 25px;
+                li {
+                    margin-bottom: 20px;
+                }
+                .point-icon {
+                    min-width: 25px;
+                    height: 25px;
+                    border: 2px solid $theme-color-orange;
+                    border-radius: 50%;
+                    padding: 4px;
+                    color: $theme-color-orange;
+                    margin-top: 7px;
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        .strategy-img {
+            width: 100%;
+            min-height: 410px;
+            background-color: #959595;
+            margin-top: 25px;
+
+            @media (max-width: 575px) {
+                min-height: 350px;
+            }
+        }
+    }
+
+    // Case sidebar
+    .case-sidebar-wrapper {
+        margin-top: 60px;
+
+        .case-sidebar-heading {
+            min-height: 70px;
+            line-height: 70px;
+            padding-left: 35px;
+            font-size: 24px;
+            color: $theme-color-white;
+            @include orange-gradient-bg;
+        }
+
+        // Case news
+
+        .recent-news {
+            .news-content {
+                background-color: #f8f8f8;
+                padding: 10px 20px;
+            }
+
+            .news-item {
+                padding: 30px 0px;
+                &:not(:last-child) {
+                    border-bottom: 1px solid #e6e6e6;
+                }
+            }
+            .news-img {
+                max-width: 125px;
+                min-height: 95px;
+                margin-right: 20px;
+            }
+
+            .news-heading {
+                font-size: 16px;
+                line-height: 24px;
+                color: $theme-color-dark;
+                font-weight: 600;
+            }
+
+            .news-author {
+                font-size: 14px;
+                line-height: 24px;
+                color: #757575;
+                font-weight: 400;
+            }
+        }
+        // Case download
+        .download-file {
+            margin-top: 60px;
+
+            .download-file-content {
+                background-color: #f8f8f8;
+                padding: 40px 30px;
+                .download-item {
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                }
+                .download-link {
+                    background-color: $theme-color-white;
+                    font-size: 16px;
+                    color: $theme-color-dark;
+                    display: block;
+                    padding: 20px 30px;
+                    text-transform: capitalize;
+
+                    i {
+                        color: $theme-color-orange;
+                    }
+                }
+
+                .download-link:hover {
+                    background-color: $theme-color-orange;
+                    color: $theme-color-white;
+                    i {
+                        color: $theme-color-white;
+                    }
+                }
+            }
+        }
+
+        // Case cta
+        .case-cta-wrapper {
+            min-height: 530px;
+            padding: 40px 30px;
+            margin-top: 60px;
+
+            @media (max-width: 767px) {
+                min-height: 400px;
+            }
+
+            @media (max-width: 575px) {
+                min-height: 350px;
+            }
+
+            .cta-sub-heading {
+                font-size: 26px;
+                color: $theme-color-white;
+                font-weight: 400;
+                font-family: "Poppins", serif;
+
+                @media (max-width: 575px) {
+                    font-size: 24px;
+                }
+            }
+
+            .cta-heading {
+                font-size: 40px;
+                font-weight: 600;
+                color: $theme-color-white;
+                margin-bottom: 20px;
+
+                @media (max-width: 575px) {
+                    font-size: 30px;
+                }
+            }
+
+            .button {
+                border-bottom: 2px solid $theme-color-white;
+                color: $theme-color-white;
+            }
+        }
+    }
+}
+
+// TEAM SKILLS
+.team-skills-wrapper {
+    margin-top: -50px;
+    margin-bottom: -60px;
+}
+
+// =================== FAQ =================== //
+.faq-wrapper {
+    margin-bottom: -20px;
+}
+
+.faq-two-wrapper {
+    .faq-left-bg {
+        background-color: #949494;
+        min-height: 650px;
+        width: 100%;
+
+        @media (max-width: 767px) {
+            min-height: 500px;
+        }
+
+        @media (max-width: 575px) {
+            min-height: 350px;
+        }
+    }
+
+    .faq-right-bg {
+        background-color: #ecf4f9;
+        width: 100%;
+    }
+
+    .right-content {
+        padding: 100px 100px;
+
+        @media (max-width: 1200px) {
+            padding: 100px 70px;
+        }
+
+        @media (max-width: 1100px) {
+            padding: 100px 50px;
+        }
+
+        @media (max-width: 575px) {
+            padding: 100px 20px;
+        }
+    }
+
+    .accordion-wrapper .accordion .accordion-header .accordion-button.collapsed {
+        background: $theme-color-white;
+        color: #bcbcbc;
+    }
+}
+
+// =================== CAREER =================== //
+.job-post-wrapper {
+    .post-card {
+        background-color: $theme-color-white;
+        box-shadow: (0 0 15px rgba(226, 226, 226, 0.78));
+        padding: 40px;
+        border-top: 4px solid $theme-color-orange;
+
+        .job-type {
+            font-size: 15px;
+            line-height: 26px;
+            color: #ff5e14;
+            font-weight: 700;
+            border-radius: 5px;
+            background-color: #ffefe7;
+            padding: 5px 10px;
+            margin-bottom: 15px;
+            display: inline-block;
+            text-transform: capitalize;
+        }
+
+        .button {
+            display: inline-block;
+            background: #ffefe7;
+            color: $theme-color-orange;
+
+            &:hover {
+                @include orange-gradient-bg;
+                color: $theme-color-white;
+            }
+        }
+    }
+}
+
+// =================== CAREER BANNER =================== //
+.career-banner-wrapper {
+    background-color: #282828;
+
+    .banner-content {
+        background-image: linear-gradient(141deg, #eb110a 0%, #ff5d13 99%);
+        padding: 70px 60px;
+        position: relative;
+        @media (max-width: 575px) {
+            margin: 0px 20px;
+            padding: 50px 30px;
+        }
+        .banner-heading {
+            font-size: 50px;
+            letter-spacing: -1px;
+            line-height: 55px;
+            color: $theme-color-white;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+
+            @media (max-width: 400px) {
+                font-size: 40px;
+            }
+        }
+
+        p {
+            color: $theme-color-white;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #1e2c8a;
+        }
+
+        &::after {
+            content: "";
+            background-color: $theme-color-white;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 20px;
+            right: -20px;
+            z-index: -1;
+        }
+    }
+}
+
+// =================== PRICING =================== //
+.pricing-faq-wrapper {
+    .pricing-faq-img {
+        background-color: #b7b7b7;
+        min-height: 520px;
+
+        @media (max-width: 575px) {
+            min-height: 350px;
+        }
+    }
+}
+
+// PRICING CARD
+.pricing-cards-wrapper {
+    .section-heading {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .section-heading-num {
+        right: -10px;
+    }
+
+    .pricing-cards {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 120px;
+
+        @media (max-width: 991px) {
+            width: 100%;
+            margin-top: 60px;
+        }
+        .card-item {
+            width: 100%;
+            box-shadow: (0 0 15px rgba(221, 221, 221, 0.82));
+            background-color: #ffffff;
+            margin-right: 20px;
+
+            @media (max-width: 991px) {
+                margin-bottom: 20px;
+            }
+
+            .card-content {
+                padding: 0px 50px 50px 50px;
+
+                // @media (max-width: 1200px) {
+                //     padding: 0px 30px 30px 30px;
+                // }
+                @media (max-width: 400px) {
+                    padding: 0px 30px 30px 30px;
+                }
+            }
+
+            .card-thumb {
+                height: 220px;
+            }
+
+            .card-heading {
+                font-size: 20px;
+                letter-spacing: -1px;
+                color: $theme-color-dark;
+            }
+
+            .card-pricing {
+                font-size: 30px;
+                letter-spacing: 0px;
+                color: $theme-color-orange;
+                .currency {
+                    font-size: 15px;
+                }
+
+                .duration {
+                    font-size: 16px;
+                    color: #9b9b9b;
+                    font-weight: 600;
+                }
+            }
+
+            .card-services {
+                .services-item {
+                    font-size: 16px;
+                    color: #9b9b9b;
+                    font-weight: 500;
+                    font-family: "Roboto", serif;
+                    margin-bottom: 10px;
+                }
+
+                .services-icon {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 2px solid #9b9b9b;
+                    margin-top: 2px;
+                    i {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        .card-1 {
+            width: 270px;
+            height: 100%;
+
+            .card-1-btn {
+                background-image: linear-gradient(141deg, #00c5fb 0%, #005be9 99%);
+                padding: 15px 20px;
+                font-size: 15px;
+            }
+        }
+
+        .card-2 {
+            width: 330px;
+            height: 100%;
+            transform: translateY(-50px);
+            @media (max-width: 991px) {
+                transform: translateY(0px);
+            }
+
+            .card-thumb {
+                height: 270px;
+            }
+            .card-2-btn {
+                background-image: linear-gradient(141deg, #eb110a 0%, #ff5d13 99%);
+                padding: 15px 20px;
+                font-size: 15px;
+            }
+        }
+
+        .card-3 {
+            width: 270px;
+            height: 100%;
+
+            .card-3-btn {
+                background-image: linear-gradient(141deg, #cb1f8d 0%, #6713d1 99%);
+                padding: 15px 20px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+// =================== TRACK AND TRACE =================== //
+.track-n-trace-tap-wrapper {
+    border: 1px solid #ebebeb;
+    padding: 50px 40px;
+    @media (max-width: 400px) {
+        padding: 25px 20px;
+    }
+
+    form {
+        margin-top: 40px;
+        textarea {
+            width: 100%;
+            min-height: 180px;
+            border: 2px solid #ebebeb;
+            padding: 20px;
+
+            &::placeholder {
+                font-size: 16px;
+                letter-spacing: 0px;
+                line-height: 28px;
+                color: #9b9b9b;
+                font-weight: 600;
+                font-family: "Poppins";
+            }
+
+            &:focus {
+                border: 2px solid $theme-color-orange;
+            }
+        }
+    }
+
+    #myTab .nav-link {
+        font-size: 20px;
+        letter-spacing: -1px;
+        color: #282828;
+        font-weight: 700;
+        font-family: "Poppins", serif;
+        padding-bottom: 15px;
+
+        @media (max-width: 575px) {
+            font-size: 16px;
+        }
+    }
+}
+
+// =================== 404 =================== //
+.not-found-wrapper {
+    padding-bottom: 80px;
+    min-height: 100vh;
+    nav {
+        padding-top: 40px;
+
+        .nav-right-item {
+            @media (max-width: 440px) {
+                margin-top: 20px;
+            }
+            .icon {
+                color: $theme-color-orange;
+                font-size: 35px;
+                margin-right: 20px;
+            }
+
+            .phone {
+                font-size: 16px;
+                color: #9b9b9b;
+                font-weight: 500;
+            }
+
+            .phone-number {
+                font-size: 24px;
+                letter-spacing: -1px;
+                color: #282828;
+                font-weight: 700;
+                font-family: "Poppins", serif;
+            }
+        }
+    }
+
+    .not-found-content {
+        h3 {
+            font-size: 35px;
+            color: #282828;
+            margin: 30px 0px;
+
+            @media (max-width: 400px) {
+                font-size: 30px;
+            }
+        }
+    }
+}

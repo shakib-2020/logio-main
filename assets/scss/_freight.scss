@@ -1,0 +1,197 @@
+// ======================== FREIGHT ======================== //
+.freight-wrapper {
+    .freight-main-content {
+        .freight-heading {
+            font-size: 35px;
+            letter-spacing: -1px;
+            line-height: 40px;
+            color: $theme-color-dark;
+            font-weight: 600;
+            text-transform: capitalize;
+
+            @media (max-width: 400px) {
+                font-size: 28px;
+            }
+        }
+
+        .content-top {
+            .top-banner {
+                width: 100%;
+                min-height: 500px;
+
+                @media (max-width: 400px) {
+                    min-height: 320px;
+                }
+            }
+
+            .icon {
+                font-size: 35px;
+                color: $theme-color-orange;
+                margin-right: 20px;
+            }
+        }
+
+        // Features
+        .features-video-wrapper {
+            .features-video {
+                width: 100%;
+                min-height: 350px;
+
+                @media (max-width: 350px) {
+                    min-height: 320px;
+                }
+
+                .button {
+                    width: 80px;
+                    height: 80px;
+                    @include orange-gradient-bg;
+                    color: $theme-color-white;
+                }
+            }
+        }
+
+        .features-content-wrapper {
+            .features-content {
+                .content-item {
+                    margin-bottom: 30px;
+                    padding: 0px 15px;
+
+                    &:nth-child(1) {
+                        border-left: 4px solid $theme-color-orange;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        line-height: 30px;
+                        color: $theme-color-orange;
+                    }
+
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        margin-left: -15px;
+                    }
+
+                    // &:nth-child(3) {
+                    //     padding: 0;
+                    // }
+                }
+            }
+        }
+
+        // CHART
+        .freight-chart-wrapper {
+            .chart-content {
+                .chart-text {
+                    width: 60%;
+                    padding-right: 20px;
+
+                    @media (max-width: 767px) {
+                        width: 100%;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    // FREIGHT SIDEBAR
+    .freight-sidebar {
+        // GALLERY
+        .sidebar-gallery-wrapper {
+            margin-top: 30px;
+
+            .gallery-item {
+                width: 100%;
+                min-height: 175px;
+                margin-bottom: 20px;
+            }
+
+            .item-overlay {
+                display: none;
+                min-height: 175px;
+                @include orange-gradient-bg;
+
+                .overlay-content {
+                    height: 175px;
+                }
+
+                a {
+                    background-color: white;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    color: $theme-color-orange;
+                }
+            }
+
+            .gallery-item:hover .item-overlay {
+                display: block;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+        }
+
+        // DOWNLOAD
+        .sidebar-download-wrapper {
+            .download-item {
+                margin-bottom: 15px;
+                .download-link {
+                    font-size: 18px;
+                    color: #9b9b9b;
+                    font-weight: 500;
+                    font-family: "Poppins", serif;
+
+                    .icon {
+                        color: $theme-color-orange;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ======================== SEA FREIGHT ======================== //
+.sea-freight-wrapper {
+    .features-video-wrapper {
+        margin-bottom: 25px;
+    }
+
+    .features-top-text {
+        border-left: 4px solid $theme-color-orange;
+        padding-left: 20px;
+    }
+
+    .sea-freight-features-content {
+        margin-bottom: 60px;
+    }
+}
+
+// ======================== ROAD FREIGHT ======================== //
+.road-freight-wrapper {
+    .features-video-wrapper {
+        .features-video {
+            height: 470px;
+            margin-bottom: 40px;
+
+            @media (max-width: 575px) {
+                height: 350px;
+            }
+        }
+    }
+
+    .features-top-text {
+        position: relative;
+        padding-left: 20px;
+    }
+
+    .features-top-text::before {
+        content: "";
+        width: 4px;
+        height: 80px;
+        @include orange-gradient-bg;
+        position: absolute;
+        top: 5px;
+        left: 0;
+    }
+}

@@ -1,0 +1,28 @@
+// IMPORT THEME
+@import "./theme/helper";
+@import "./theme/variables";
+@import "./theme/mixins";
+@import "./theme/typography";
+@import "./theme/utilities";
+@import "./theme/buttons";
+@import "./theme/scrollTop";
+
+// IMPORT SECTIONS
+
+@import "./slider";
+@import "./header";
+@import "./navbar";
+@import "./hero";
+@import "./about";
+@import "./team";
+@import "./services";
+@import "./works";
+@import "./portfolio";
+@import "./testimonial";
+@import "./company";
+@import "./freight";
+@import "./skills";
+@import "./contact";
+@import "./blog";
+@import "./footer";
+@import "./forms.scss";

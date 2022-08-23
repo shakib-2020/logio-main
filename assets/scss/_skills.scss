@@ -1,0 +1,302 @@
+// =================== SKILLS: ONE =================== //
+
+.skills-wrapper {
+    .section-small-heading,
+    .theme-heading-secondary,
+    .body-normal-text {
+        color: $theme-color-white;
+    }
+
+    .section-small-heading {
+        margin-left: 80px;
+        @media (max-width: 400px) {
+            margin-left: 60px;
+        }
+
+        @media (max-width: 320px) {
+            margin-left: 60px;
+        }
+
+        &::before {
+            background-color: $theme-color-white;
+        }
+        &::after {
+            background-color: transparent;
+        }
+    }
+
+    .section-heading-num {
+        color: $theme-color-orange;
+    }
+
+    .skills-left-content {
+        @media (max-width: 991px) {
+            margin-bottom: 60px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 45px;
+        }
+    }
+
+    .skill-progress-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+
+        .theme-heading-tertiary {
+            color: $theme-color-white;
+            margin-top: 25px;
+        }
+
+        text {
+            color: $theme-color-white;
+            font-weight: bold;
+            font-size: 20px;
+            fill: $theme-color-white;
+
+            @media (max-width: 575px) {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+// =================== SKILLS: TWO =================== //
+
+.skills-two-wrapper {
+    position: relative;
+    .skils-bar-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .skills-left-bg,
+    .skills-right-bg {
+        padding-left: 200px;
+        padding-right: 200px;
+
+        @media (max-width: 1800px) {
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+
+        @media (max-width: 1550px) {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        @media (max-width: 1200px) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        @media (max-width: 575px) {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+    .skills-right-bg {
+        background-color: #bdbdbd;
+        margin-left: -25px;
+        min-height: 100%;
+        padding-bottom: 100px;
+
+        @media (max-width: 991px) {
+            min-height: 100vh;
+        }
+
+        @media (max-width: 767px) {
+            min-height: 50vh;
+        }
+    }
+
+    .section-heading-wrapper {
+        .section-small-heading {
+            margin-left: 80px;
+            @media (max-width: 400px) {
+                margin-left: 60px;
+            }
+            color: $theme-color-white;
+            &::before {
+                background-color: $theme-color-white;
+            }
+            &::after {
+                display: none;
+            }
+        }
+
+        h2 {
+            color: $theme-color-white;
+        }
+    }
+
+    .skills-bars {
+        .proggress {
+            height: 8px;
+            width: 10px;
+            border-top-right-radius: 5px !important;
+            border-bottom-right-radius: 5px !important;
+            background-image: linear-gradient(141deg, #fff 0%, #fff 99%);
+        }
+
+        .progressbar {
+            background-color: #fa6b41 !important;
+        }
+
+        .progressbar-wrapper {
+            min-width: 60%;
+            margin-left: -50px;
+
+            @media (max-width: 1200px) {
+                width: 45%;
+            }
+
+            @media (max-width: 991px) {
+                width: 60%;
+            }
+
+            @media (max-width: 575px) {
+                width: 100%;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .bar-text,
+    .bar-parcent {
+        font-size: 20px;
+        letter-spacing: -1px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "Poppins", serif;
+
+        @media (max-width: 575px) {
+            width: 100%;
+        }
+    }
+
+    .bar-parcent {
+        @media (max-width: 575px) {
+            margin-left: 10px;
+        }
+    }
+
+    .bar-text {
+        width: 35%;
+        padding-left: 10px;
+
+        @media (max-width: 575px) {
+            width: 100%;
+        }
+    }
+    .button {
+        background: #1e2c8a;
+    }
+}
+// =================== SKILLS: THREE =================== //
+
+.skills-three-wrapper {
+    padding-top: 190px;
+    padding-bottom: 120px;
+
+    @media (max-width: 991px) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .section-heading-wrapper {
+        .section-small-heading {
+            margin-left: 80px;
+            @media (max-width: 400px) {
+                margin-left: 60px;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .skills-bar-wrapper {
+        .skills-bars {
+            .proggress {
+                // margin-bottom: 40px;
+                height: 8px;
+                width: 10px;
+                border-top-right-radius: 5px !important;
+                border-bottom-right-radius: 5px !important;
+                background-image: linear-gradient(141deg, #fff 0%, #fff 99%);
+            }
+
+            .progressbar {
+                background-color: #fa6b41 !important;
+            }
+
+            .progressbar-wrapper {
+                min-width: 100%;
+
+                @media (max-width: 1200px) {
+                    width: 45%;
+                }
+
+                @media (max-width: 991px) {
+                    width: 60%;
+                }
+
+                @media (max-width: 575px) {
+                    width: 100%;
+                    margin-left: 0px;
+                }
+            }
+        }
+        .bar-text,
+        .bar-parcent {
+            font-size: 20px;
+            letter-spacing: -1px;
+            color: $theme-color-dark;
+            font-weight: 700;
+            font-family: "Poppins", serif;
+        }
+
+        .bar-parcent {
+            margin-left: auto;
+        }
+    }
+
+    .button {
+        display: inline-block;
+        margin-top: 35px;
+    }
+}
+
+// =================== SKILLS: FOUR =================== //
+.skills-four-wrapper {
+    padding-top: 130px;
+    padding-bottom: 490px;
+    @media (max-width: 767px) {
+        padding-bottom: 270px;
+        padding-top: 90px;
+    }
+    .skills-content-wrapper {
+        position: relative;
+    }
+    .skills-video-wrapper {
+        background-color: red;
+        width: 100%;
+        height: 650px;
+        position: absolute;
+        top: 560px;
+        right: 0;
+        z-index: 11;
+
+        @media (max-width: 991px) {
+            top: 950px;
+        }
+
+        @media (max-width: 767px) {
+            height: 450px;
+        }
+    }
+}

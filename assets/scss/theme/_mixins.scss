@@ -1,0 +1,27 @@
+@mixin setSkew {
+    -moz-transform: skew(20deg, 0deg);
+    -webkit-transform: skew(20deg, 0deg);
+    -o-transform: skew(20deg, 0deg);
+    -ms-transform: skew(20deg, 0deg);
+    transform: skew(20deg, 0deg);
+}
+
+@mixin resetSkew {
+    -moz-transform: skew(-20deg, 0deg);
+    -webkit-transform: skew(-20deg, 0deg);
+    -o-transform: skew(-20deg, 0deg);
+    -ms-transform: skew(-20deg, 0deg);
+    transform: skew(-20deg, 0deg);
+}
+
+@mixin transition {
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin orange-gradient-bg {
+    background-image: linear-gradient(
+        141deg,
+        rgba(235, 17, 10, 0.9019607843137255) 0%,
+        rgba(255, 93, 19, 0.8509803921568627) 99%
+    );
+}

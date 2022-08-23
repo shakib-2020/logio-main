@@ -1,0 +1,407 @@
+/*
+Template: Fundbux - Charity & Foundries HTML Template
+Author: Modina Theme
+Author URI: https://themeforest.net/user/modinatheme
+Description: Charity & Foundries HTML5 Template
+Version: 1.0
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* RESPONSIVE CONTAINER */
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1160px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+html,
+body,
+div,
+span,
+img,
+ol,
+ul,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+option,
+legend,
+label,
+table,
+th,
+td,
+tr,
+article,
+aside,
+caption,
+figure,
+footer,
+header,
+hgroup,
+mark,
+nav,
+section,
+time,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none !important;
+    border: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    display: none;
+}
+
+input::-webkit-focus-inner {
+    border: 0;
+    display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+select {
+    font-size: 18px;
+    line-height: 90px;
+    color: #282828;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: #cdcdcd;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    color: #cdcdcd;
+    opacity: 1;
+    /* Firefox */
+}
+
+::-ms-input-placeholder {
+    color: #cdcdcd;
+    opacity: 1;
+    /* Firefox */
+}
+
+::placeholder {
+    font-size: 18px;
+    line-height: 90px;
+    color: #282828;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #cdcdcd;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #cdcdcd;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+figure {
+    margin: 0px;
+}
+
+form {
+    position: relative;
+}
+
+.form-control:focus {
+    outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    font-size: inherit;
+    color: inherit;
+}
+
+h1:hover a,
+h2:hover a,
+h3:hover a,
+h4:hover a,
+h5:hover a,
+h6:hover a {
+    font-size: inherit;
+    color: inherit;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+    border-color: #000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style: none;
+    position: relative;
+}
+
+a,
+button {
+    font-family: "Roboto", sans-serif;
+    position: relative;
+}
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+    outline: 0;
+    text-decoration: none;
+}
+
+input,
+textarea,
+button {
+    border: 0px;
+}
+
+/* --------------------------------------------
+    Template Default Fonts & Fonts Styles
+ ---------------------------------------------- */
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    /* overflow-x: hidden; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    outline: none !important;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: #202426;
+}
+
+p {
+    margin: 0px;
+}
+
+.section-heading-num {
+    font-family: "Poppins", sans-serif;
+}
+
+.coverbg {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover !important;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.align-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.align-center:before,
+.align-center:after {
+    content: none;
+}
+
+.align-center-h {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.align-center-h:before,
+.align-center-h:after {
+    content: none;
+}
+
+.align-center-v {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.align-center-v:before,
+.align-center-v:after {
+    content: none;
+}
+
+.align-center-v-b {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.align-center-v-b:before,
+.align-center-v-b:after {
+    content: none;
+}
+
+.justify-content-center {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.justify-content-center:before,
+.justify-content-center:after {
+    content: none;
+}
+
+.eq-height {
+    display: -webkit-box;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -o-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.eq-height:before,
+.eq-height:after {
+    content: none;
+}
